@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="io.shortway.notes.navigation.NavActivity">
+    <item
+        android:id="@+id/menu_action_save"
+        android:orderInCategory="100"
+        android:title="@string/menu_action_save"
+        app:actionLayout="@layout/actionview_save"
+        app:showAsAction="always" />
+</menu>

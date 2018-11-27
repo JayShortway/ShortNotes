@@ -1,0 +1,42 @@
+ext {
+    // Android
+
+    androidMinSdkVersion = 15
+    androidTargetSdkVersion = 28
+    androidCompileSdkVersion = 28
+    minifyEnabled = false
+
+    // Libraries
+    androidx_version = "1.0.2"
+
+    def lifecycle_version = "2.0.0"
+    def nav_version = "1.0.0-alpha07"
+
+    dependencies = [
+            // Java
+            json: "org.json:json:20180813",
+
+            // Android
+            timber: "com.jakewharton.timber:timber:4.7.1",
+            material: "com.google.android.material:material:1.0.0",
+
+            // Rx
+            rxjava: "io.reactivex.rxjava2:rxjava:2.2.3",
+            rxandroid: "io.reactivex.rxjava2:rxandroid:2.1.0",
+
+            // Jetpack
+            xappcompat: "androidx.appcompat:appcompat:$androidx_version",
+            xlegacy: "androidx.legacy:legacy-support-v4:1.0.0",
+            xlifecycle_extensions: "androidx.lifecycle:lifecycle-extensions:$lifecycle_version",
+            xlifecycle_reactive: "androidx.lifecycle:lifecycle-reactivestreams:$lifecycle_version",
+            xconstraint_layout: "androidx.constraintlayout:constraintlayout:2.0.0-alpha2",
+            navigation_fragment: "android.arch.navigation:navigation-fragment:$nav_version",
+            navigation_ui: "android.arch.navigation:navigation-ui:$nav_version",
+
+            // Testing
+            junit: "junit:junit:4.12",
+            runner: "androidx.test:runner:1.1.0",
+            espresso: "androidx.test.espresso:espresso-core:3.1.0"
+    ]
+
+}

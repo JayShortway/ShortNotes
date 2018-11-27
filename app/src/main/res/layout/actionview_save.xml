@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- We have to wrap the Button in a Layout for our margins to be respected -->
+    <Button
+        android:id="@+id/button_note_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_action_save"
+        android:layout_marginEnd="@dimen/margin_horizontal_half"
+        android:layout_marginRight="@dimen/margin_horizontal_half"
+        android:theme="@style/AppTheme"
+        android:backgroundTint="?attr/colorAccent"
+        style="@style/Base.TextAppearance.AppCompat.Widget.Button.Colored" />
+    <!-- TODO Check the Toolbar's theme for why neither android:theme nor style picks our Theme's colors -->
+
+</LinearLayout>
+

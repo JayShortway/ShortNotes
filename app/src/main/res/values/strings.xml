@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ShortNotes</string>
+
+    <string name="fragment_title_note_list">@string/app_name</string>
+    <string name="fragment_title_note_details">Note</string>
+    <string name="fragment_title_note_edit">Edit note</string>
+    <string name="fragment_title_note_add">Add note</string>
+
+    <string name="menu_action_save">Save</string>
+
+    <string name="snackbar_action_undo">Undo</string>
+
+    <string name="hint_note_title">Title</string>
+    <string name="hint_note_body">Note</string>
+
+    <string name="success_note_saved">%s saved</string>
+    <string name="success_note_deleted">%s deleted</string>
+    <string name="error_note_empty_both">Title and Note cannot be empty</string>
+    <string name="error_note_empty_title">Title cannot be empty</string>
+    <string name="error_note_empty_note">Note cannot be empty</string>
+
+
+</resources>

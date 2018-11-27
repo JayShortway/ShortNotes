@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="note"
+            type="io.shortway.notes.domain.model.notes.Note"/>
+    </data>
+
+    <ScrollView
+        android:id="@+id/scrollview_note_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".navigation.NavActivity">
+
+        <TextView
+            android:id="@+id/textview_note_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_horizontal_default"
+            android:text="@{note.body}"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            tools:text="Milk, coffee, tea, sugar" />
+
+    </ScrollView>
+
+</layout>
